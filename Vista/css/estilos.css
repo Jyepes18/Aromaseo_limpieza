@@ -1,0 +1,66 @@
+*{
+    text-transform: capitalize;
+}
+
+header {
+    background-color: #EC2C2C;
+    height:130px; 
+    width:100%;
+}
+
+header img{
+    height:120px;
+    width:15%;
+    border-radius:50%;
+    
+}
+
+.foto{
+    margin-left: 1500px;
+    height:60px;
+    width:60px;
+    margin-top: -8px;
+}
+
+header h4{
+    text-align: right;
+    margin-top: -25px;
+}
+
+article h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#tarjeta{
+    margin-left:3%;
+    margin-top: 3% ;
+}
+
+#nombre{
+    width: 50%;
+    margin-left: 25%;
+}
+
+#cod{
+    width: 20%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+#est{
+    width: 20%;
+    margin-left:65%;
+    margin-top: -70px;
+}
+
+#kk{
+    margin-left: 40%;
+    margin-top: 50px;
+    background-color: #369BD1;
+    border-radius: 50px;
+    border-color: #369BD1;
+    width: 17%;
+    
+
+}

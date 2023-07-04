@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Cotizar.css">
+    <title>Cotizar</title>
+</head>
+
+<body>
+
+    <form action="../../Modelo/php/cotizar/insertardatos.php"  method="post" class="form" onsubmit="return validar();">
+        <h2 class="form_title">Cotizar</h2>
+
+        <a class="form_link" href="../../Modelo/php/Roles/index.php">volver</a>
+
+        <div class="form_container">
+
+            <div class="form_group">
+                <label for="cod_cotizacion" class="form_label"></label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="Nombre" name="Nombre_Cliente" class="form_input" >
+                <label for="Nombre" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="number" name="n_doc"  id="Documento" class="form_input" >
+                <label for="Documento" class="form_label">Documento</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <label for="Tipo de documento" class="form_label"></label>
+                <select  class="form_input" title="ㅤ" name="Tipo_Doc" id="tipoid">
+                    <option selected disabled hidden value="">Tipo de documento</option>
+                    <option value="C.E">C.E</option>
+                    <option value="C.C">C.C</option>
+                    <span class="form_line"></span>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="Producto" name="Producto" class="form_input" >
+                <label for="Producto" class="form_label">Producto</label>
+                <span class="form_line"></span>
+            </div>
+
+            <input type="submit" name="Mirar"  class="form_submit" value="Cotizar">
+        </div>
+        </div>
+    </form>
+
+    <script src="../../Controlador/js/cotizar.js"></script>
+</body>
+
+</html>

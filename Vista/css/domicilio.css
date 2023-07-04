@@ -1,0 +1,119 @@
+*{
+    text-transform: capitalize;
+}
+
+header {
+    background-color: #EC2C2C;
+    height:130px; 
+    width:100%;
+}
+
+header img{
+    height:120px;
+    width:15%;
+    border-radius:50%;
+    
+}
+
+.foto{
+    margin-left: 1500px;
+    height:60px;
+    width:60px;
+    margin-top: -8px;
+}
+
+header h4{
+    text-align: right;
+    margin-top: -25px;
+}
+#tarjeta{
+    margin-left: 3%;
+    margin-top: 3%;
+}
+article h1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#nombre{
+    width: 40%;
+    margin-left: 8%;
+}
+
+#Documento{
+    width: 40%;
+    margin-left: 50%;
+    margin-top: -62px;
+}
+
+#Producto{
+    width: 40%;
+    margin-left: 8%;
+}
+
+#Cantidad{
+    width: 40%;
+    margin-left: 50%;
+    margin-top: -62px;
+}
+
+#Tel{
+    width: 40%;
+    margin-left: 50%;
+    margin-left: 8%;
+}
+
+#Direccion{
+    width: 40%;
+    margin-left: 50%;
+    margin-top: -73px;
+}
+
+#boton{
+
+    background-color: #369BD1;
+    border-color: #369BD1;
+
+    
+
+}
+
+@media (max-width:1179px) {
+
+    main{
+        max-width: 800px;
+    }
+
+    article{
+        max-width: 500px;
+    }
+
+    .card{
+        max-width: 800px;
+
+    }
+
+    .formulario1{
+        max-width: 800px;
+    }
+}
+
+@media (max-width:666px) {
+
+    main{
+        max-width: 500px;
+    }
+
+    article{
+        max-width: 500px;
+    }
+
+    .card{
+        max-width: 400px;
+
+    }
+
+    .formulario1{
+        max-width: 400px;
+    }
+}

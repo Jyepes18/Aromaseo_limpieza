@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap css/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/compras.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Registro de Compras</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid" id="cabecera">
+      <div class="row justify-content-center align-content-center">
+        <div class="col-8 barra">
+          <a href="../../Modelo/php/Roles/login.php"><img class="logo" title="logo" src="../img/logo.png"></a>
+        </div>
+        <div class="col-4 text-right barra">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="barra-lateral col-12 col-sm-auto">
+        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+          <a href="proveedor.html"><span>Registo de Proveedor</span></a>
+          <a href="Cliente.html"><span>Registro de Cliente</span></a>
+          <a href="vehiculo.html"><span>Registro de vehiculo</span></a>
+          <a href="Productoadmi.html"><span>Registro de Productos</span></a>
+          <a href="crear_servicio2.html"><span>Crear Servicio Domiciliario</span></a>
+          <a href="compra.html"><span>Registrar Compra</span></a>
+          <a href="../../Modelo/php/cotizar/tabla.php"><span>Visualizar Cotizaciones</span></a>
+          <a href="../../Modelo/php/Pedido/pedido.php"><span>Visualizar Pedidos</span></a>
+        </nav>
+      </div>
+      <main class="main col">
+        <div class="row justify-content-center align-content-center text-center">
+          <div class="columna col-lg-6">
+          </div>
+          <div class="card" id="tarjeta">
+            <article>
+              <form class="compra" action="../../Modelo/php/Compra/insertar.php" method="post" onsubmit="return validar();">
+                <h2 class="form_title">Registrar compra</h2>
+                <div class="form_container">
+
+                  <div class="mb-3" id="nombrep1">
+                    <label for="nombrep" class="form-label"></label>
+                    <input id="nombrep" name="nombre_proveedor" type="text" class="form-control" placeholder="Nombre del proveedor">
+                  </div>
+                  <div class="mb-3" id="tel1">
+                    <label for="tel" class="form-label"></label>
+                    <input id="tel" name="tel_proveedor" type="tel" class="form-control" placeholder="Telefono del proveedor">
+                  </div>
+                  <div class="mb-3" id="doc1">
+                    <label for="doc" class="form-label"></label>
+                    <input id="doc" name="doc_proveedo" type="tel" class="form-control" placeholder="Documento del proveedor">
+                  </div>
+                  <div class="mb-3" id="fecha1">
+                    <label for="fecha" class="form-label" id="texto2">Fecha de Compra</label>
+                    <input id="fecha" name="fecha_compra" type="date" class="form-control" placeholder="Fecha de compra">
+                  </div>
+                  <div class="mb-3" id="producto1">
+                    <label for="producto" class="form-label"></label>
+                    <input id="producto" name="producto" type="text" class="form-control" placeholder="Producto">
+                  </div>
+                  <div class="mb-3" id="cantidad1">
+                    <label for="cantidad" class="form-label"></label>
+                    <input id="cantidad" name="cantidad" type="number" class="form-control" placeholder="cantidad">
+                  </div>
+                  <div class="mb-3" id="descripcion1">
+                    <label for="descripcion" class="form-label"></label>
+                    <input id="descripcion" name="descripcion" type="text" class="form-control" placeholder="Descripcion">
+                  </div>
+                  <div class="mb-3" id="valor11">
+                    <label for="valor1" class="form-label"></label>
+                    <input id="valor1" name="valor_unitario" type="number" class="form-control" placeholder="Valor Unitario">
+                  </div>
+                  <div class="mb-3" id="valor21">
+                    <label for="valor2" class="form-label"></label>
+                    <input id="valor2" name="valor_total" type="number" class="form-control" placeholder="Valor Total">
+                  </div>
+                  <br><br>
+                  <div class="botom3">
+                    <a href="../../Modelo/php/Compra/reportes/index.php"><button type="button" class="btn btn-danger">Reporte PDF</button></a>
+                    <input type="submit" class="btn btn-danger" id="boton" name="registrar">
+                    <a href="../../Modelo/php/Compra/compra.php"><button type="button"  class="btn btn-secondary">Visualizar datos</button></a>
+                  </div>
+
+
+                  <br><br><br>
+                </div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../../Controlador/js/Compra.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.min.js"></script>
+</body>
+</html>

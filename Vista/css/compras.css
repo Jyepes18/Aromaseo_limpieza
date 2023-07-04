@@ -1,0 +1,128 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-transform: capitalize;
+}
+
+
+.contenedor{
+    max-width: 100%;
+}
+#cabecera{
+
+background-color:#369BD1 ;
+}
+
+
+.logo{
+    width: 15%;
+    margin-left: 1%;
+    margin-top: 1%;
+
+}
+
+.foto1{
+    position: absolute;
+    width: 5%;
+    margin-left: 90%;
+    margin-top: -7%;
+    
+}
+
+article h2{
+    text-align: center;
+}
+
+#tarjeta{
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.compra{
+    
+    
+    margin-top: 5%;
+}
+
+
+#nombrep1{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: 10px;
+}
+
+#tel1{
+    margin-left: 3%;
+    width: 40%;
+}
+
+#doc1{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: -80px;
+}
+
+#fecha1{
+    margin-left: 3%;
+    width: 40%;
+}
+
+#producto1{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: -80px;
+}
+
+#cantidad1{
+    margin-left: 3%;
+    width: 40%;
+}
+
+#descripcion1{
+    margin-left: 56%;
+    width: 40%;
+    height: 150px;
+    margin-top: -80px;
+}
+
+#valor11{
+    margin-left: 3%;
+    width: 40%;
+    margin-top: -80px;
+}
+
+#valor21{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: -80px;
+}
+
+#boton{
+    background-color:#369BD1 ;
+    border-color: #369BD1;
+}
+
+@media (max-width:1200px){
+
+    main{
+        max-width: 600px;
+        
+    }
+
+    article{
+        max-width: 1000px;
+        
+    }
+
+    .formulario1{
+        max-width: 600px;
+
+    }
+
+    .card{
+        max-width: 600px;
+    }
+
+    
+
+}

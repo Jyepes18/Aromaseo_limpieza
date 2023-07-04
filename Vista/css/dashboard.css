@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+    text-transform: capitalize;
+}
+
+.barra {
+    background-color: #369BD1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.dropdown-menu {
+    margin: 17px;
+    background: #a3a9ba;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+
+.cerrar:hover {
+    background-color: rgba(206, 65, 22, 0.877);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+.user {
+    font-size: 35px;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    
+    
+}
+
+/*BARRA LATERAL*/
+
+.barra-lateral {
+    background: #252121;
+    color: #fff;
+    min-width: 250px;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.barra-lateral a {
+    color: #fff;
+}
+
+
+/*ESTILOS MENU*/
+
+.barra-lateral .menu a {
+    display: block;
+    padding: 20px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.barra-lateral .menu a:hover {
+    background-color: #003C5D;
+    text-decoration: none;
+}
+
+.active {
+    background: #003C5D;
+}
+
+.barra-lateral .menu {
+    border-top: 5px #fff solid;
+}
+
+.barra-lateral .menu a i {
+    margin-right: 20px;
+}
+
+
+/*MAIN*/
+
+.main {
+    padding-top: 40px;
+}
+
+.main .columna {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 900px) { 
+    
+    header{
+        background-position: center;
+    }
+    
+}

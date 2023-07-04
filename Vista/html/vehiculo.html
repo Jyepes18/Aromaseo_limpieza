@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/Cliente.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <title>Registro de Cliente</title>
+</head>
+
+
+<body>
+  <header>
+    <div class="container-fluid" id="cabecera">
+      <div class="row justify-content-center align-content-center">
+        <div class="col-8 barra">
+          <a href="../../Modelo/php/Roles/login.php"><img title="ㅤ" class="logo" src="../img/logo.png"></a>
+        </div>
+        <div class="col-4 text-right barra">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="barra-lateral col-12 col-sm-auto">
+        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+          <a href="proveedor.html"><span>Registo de Proveedor</span></a>
+          <a href="Cliente.html"><span>Registro de Cliente</span></a>
+          <a href="Productoadmi.html"><span>Registro de vehiculo</span></a>
+          <a href="Productoadmi.html"><span>Registro de Productos</span></a>
+          <a href="crear_servicio2.html"><span>Crear Servicio Domiciliario</span></a>
+          <a href="compra.html"><span>Registrar Compra</span></a>
+          <a href="../../Modelo/php/cotizar/tabla.php"><span>Visualizar Cotizaciones</span></a>
+          <a href="../../Modelo/php/Pedido/pedido.php"><span>Visualizar Pedidos</span></a>
+
+        </nav>
+    
+    </div>
+    <main class="main col">
+      <div class="row justify-content-center align-content-center text-center">
+        <div class="columna col-lg-6">
+
+        </div>
+        <div class="card" id="tarjeta" >
+
+          <article>
+            <br><br>
+
+            <h2 class="h2">Registrar vehiculo</h2>
+
+
+            <form class="formulario1" action="../../Modelo/php/Vehiculo/insertar.php" method="post" onsubmit="return validar();">
+
+              <label id="vehiculo" for="inputZip" class="form-label"></label>
+              <select class="form-select" name="tipo_vehiculo"  aria-label="Default select example" id="TD" >
+                <option selected disabled hidden value="">Tipo de vehiculo</option>
+                <option value="Carro">Carro</option>
+                <option value="Moto">Moto</option>
+              </select>
+
+
+
+              <div class="mb-3" id="doc">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input id="placa" name="placa" type="text" class="form-control" placeholder="Placa" >
+              </div>
+
+              
+
+<br><br><br>
+              <div class="botom3">
+              <a href="../../Modelo/php/Vehiculo/reportes/index.php"><button type="button" class="btn btn-danger">Reporte PDF</button></a>
+              <input type="submit" name="Registrar" class="btn btn-danger" value="Registrar" id="boton">
+              <a href="../../Modelo/php/Vehiculo/vehiculo.php"><button type="button"   class="btn btn-secondary">Visualizar datos</button></a>
+              </div>
+<br><br><br>
+
+
+
+
+
+            </form>
+          </article>
+
+        </div>
+        </article>
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+  </div>
+  <script src="../../Controlador/js/vehiculo.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<script src="bootstrap js/js/bootstrap.min.js"></script>
+<script src="bootstrap js/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

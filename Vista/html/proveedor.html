@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/proveedor.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <title>Registro de Proveedor</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center align-content-center">
+      <div class="col-8 barra">
+        <a href="../../Modelo/php/Roles/login.php"><img title="logo" class="logo" src="../img/logo.png"></a>
+      </div>
+      <div class="col-4 text-right barra">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="barra-lateral col-12 col-sm-auto">
+        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+          <a href="proveedor.html"><span>Registo de Proveedor</span></a>
+          <a href="Cliente.html"><span>Registro de Cliente</span></a>
+          <a href="vehiculo.html"><span>Registro de vehiculo</span></a>
+          <a href="Productoadmi.html"><span>Registro de Productos</span></a>
+          <a href="crear_servicio2.html"><span>Crear Servicio Domiciliario</span></a>
+          <a href="compra.html"><span>Registrar Compra</span></a>
+          <a href="../../Modelo/php/cotizar/tabla.php"><span>Visualizar Cotizaciones</span></a>
+          <a href="../../Modelo/php/Pedido/pedido.php"><span>Visualizar Pedidos</span></a>
+
+
+        </nav>
+      </div>
+      <main class="main col">
+        <div class="row justify-content-center align-content-center text-center">
+          <div class="card" id="tarjeta">
+
+            <div class="contenedor">
+
+
+              <article>
+                <br><br>
+                <h2 class="h2">Registrar Proveedor</h2>
+
+
+                <form class="formulario1" action="../../Modelo/php/Proveedor/inseratar.php" method="post" onsubmit="return validar();">
+
+                  <div class="form_group">
+                    <label for="cod_proveedor" class="form_label"></label>
+                    <span class="form_line"></span>
+                  </div>
+
+                  <div class="mb-3" id="document">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input id="Documento" name="documento" type="text" class="form-control" placeholder="Documento">
+                  </div>
+
+                  <label id="tipoid" for="inputZip" class="form-label"></label>
+                  <select class="form-select" name="tipo_doc" 
+                    aria-label="Default select example" id="TD">
+                    <option selected disabled hidden value="">Seleciona tu Documento</option>
+                    <option value="C.C">C.C</option>
+                    <option value="C.E">C.E</option>
+                  </select>
+
+                  <div class="mb-3" id="prov_name">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input id="Nombre" name="nombre" type="text" class="form-control"
+                      placeholder="Nombre del Proveedor">
+                  </div>
+
+
+
+                  <div class="mb-3" id="prov_lastname">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input id="Apellido" name="Apellido"  type="text" class="form-control"
+                      placeholder="Apellido del Proveedor" >
+                  </div>
+
+
+
+                  <div class="mb-3" id="cellphone">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input id="Telefono" name="telefono" type="number"  class="form-control" placeholder="Telefono">
+                  </div>
+
+
+                  <div class="input-group flex-nowrap" id="email">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input id="Correo" type="email" name="correo" class="form-control" placeholder="Correo"
+                      aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                  <br><br>
+
+                  <div class="botom3">
+                    <a href="../../Modelo/php/Proveedor/reportes/index.php"><button type="button" class="btn btn-danger">Reporte PDF</button></a>
+                    <input type="submit" class="btn btn-danger" name="Guardar" value="Guardar" id="kk">
+                    <a href="../../Modelo/php/Proveedor/proveedor.php"><button type="button"   class="btn btn-secondary">Visualizar datos</button></a>
+                  </div>
+
+              <br><br>
+                </form>
+
+
+              </article>
+
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="../../Controlador/js/proveedor.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

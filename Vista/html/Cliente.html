@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap css/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/Cliente.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <title>Registro de Cliente</title>
+</head>
+
+
+
+<body>
+  <header>
+    <div class="container-fluid" id="cabecera">
+      <div class="row justify-content-center align-content-center">
+        <div class="col-8 barra">
+          <a href="../../Modelo/php/Roles/login.php"><img class="logo" title="logo" src="../img/logo.png"></a>
+        </div>
+        <div class="col-4 text-right barra">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="barra-lateral col-12 col-sm-auto">
+        <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+          <a href="proveedor.html"><span>Registo de Proveedor</span></a>
+          <a href="Cliente.html"><span>Registro de Cliente</span></a>
+          <a href="vehiculo.html"><span>Registro de vehiculo</span></a>
+          <a href="Productoadmi.html"><span>Registro de Productos</span></a>
+          <a href="crear_servicio2.html"><span>Crear Servicio Domiciliario</span></a>
+          <a href="compra.html"><span>Registrar Compra</span></a>
+          <a href="../../Modelo/php/cotizar/tabla.php"><span>Visualizar Cotizaciones</span></a>
+          <a href="../../Modelo/php/Pedido/pedido.php"><span>Visualizar Pedidos</span></a>
+
+
+
+        </nav>
+    
+    </div>
+    <main class="main col">
+      <div class="row justify-content-center align-content-center text-center">
+        <div class="columna col-lg-6">
+
+        </div>
+        <div class="card" id="tarjeta" >
+
+          <article>
+            <br><br>
+
+            <h2 class="h2">Registrar Cliente</h2>
+
+
+            <form class="formulario1" action="../../Modelo/php/Clientes/insertarcli.php" method="post" onsubmit="return validar();">
+
+              <label id="tipoid" for="inputZip" class="form-label"></label>
+              <select class="form-select" name="tipo_doc"  aria-label="Default select example" id="TD">
+                <option selected disabled hidden value="">Tipo de Documento</option>
+                <option value="C.C">C.C</option>
+                <option value="C.E">C.E</option>
+              </select>
+
+
+
+              <div class="mb-3" id="doc">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input id="Documento" type="number" name="documento" class="form-control" placeholder="Documento">
+              </div>
+
+
+
+
+              <div class="mb-3" id="nameclien">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input id="Nombre" type="text" name="nombre" class="form-control" placeholder="Nombre del cliente">
+              </div>
+
+
+
+              <div class="mb-3" id="lastname">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input id="Apellido" type="text" name="apellido" class="form-control" placeholder="Apellido del cliente">
+              </div>
+
+
+
+              <div class="mb-3" id="cellphone">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="number" id="Telefono" name="telefono" class="form-control" placeholder="Telefono">
+              </div>
+
+
+              <div class="mb-3" id="address">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input id="Contraseña" name="contraseña" type="password" class="form-control" placeholder="Contraseña">
+              </div>
+
+
+
+              <div class="input-group flex-nowrap" id="email">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input id="Correo" type="email" name="correo" class="form-control" placeholder="Correo" aria-label="Username"
+                  aria-describedby="addon-wrapping">
+              </div>
+
+              <label id="codigo1" for="inputZip" class="form-label"></label>
+              <select class="form-select" name="codigo_rol"  aria-label="Default select example" id="codigo">
+                <option selected disabled hidden value="">Selecciona rol</option>
+                <option value="1">administrador</option>
+                <option value="2">cliente</option>
+              </select>
+              <br><br>
+
+
+              <div class="botom3">
+                <a href="../../Modelo/php/Clientes/reportes/index.php"><button type="button" class="btn btn-danger">Reporte PDF</button></a>
+                <input type="submit" class="btn btn-danger" name="Registrar" value="Registrar" id="boton">
+                <a href="../../Modelo/php/Clientes/clientes.php"><button type="button"   class="btn btn-secondary">Visualizar datos</button></a>
+              </div>
+
+        <br><br>
+            </form>
+          </article>
+        </div>
+      </div>
+    </main>
+    </div>
+  </div>
+  <script src="../../Controlador/js/Cliente.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.js"></script>
+  <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-transform: capitalize;
+}
+
+
+.contenedor{
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+header img{
+    header img{
+        width: 15%;
+        margin-left: 5%;
+        margin-top: 1%;
+        border-style: solid;
+    }
+}
+
+.foto1{
+    position: absolute;
+    width: 5%;
+    margin-left: 90%;
+    margin-top: -7%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+article h2{
+    text-align: center;
+}
+
+
+
+.formulario1{
+
+    margin-top: 5%;
+}
+
+#document{
+    margin-left: 3%;
+    width: 40%;
+    margin-top: -40px;
+}
+
+#TD{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: -80px;
+}
+
+#Nombre{
+    margin-left: 3%;
+    width: 40%;
+    margin-top: -10px;
+}
+
+#Apellido{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: -80px;
+
+}
+
+#Telefono{
+    margin-left: 3%;
+    width: 40%;
+    margin-top: -45px;
+}
+
+#email{
+    margin-left: 56%;
+    width: 40%;
+    margin-top: -55px;
+}
+
+
+#factura{
+    margin-left: 3%;
+    width: 40%;
+    margin-top: -35px; 
+}
+
+#kk{
+    background-color: #369BD1;
+    border-color: #369BD1;
+}
+
+
+@media (max-width:1200px){
+
+    .contenedor{
+        max-width: 600px;
+        
+    }
+
+    article{
+        max-width: 1000px;
+        
+    }
+
+    .formulario1{
+        max-width: 600px;
+
+    }
+
+    .card{
+        max-width: 600px;
+    }
+
+}

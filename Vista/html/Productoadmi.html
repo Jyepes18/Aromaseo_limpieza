@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/adminProducto.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Registro de Producto</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-center align-content-center">
+        <div class="col-8 barra">
+          <a href="../../Modelo/php/Roles/login.php"
+            ><img title="logo" class="logo" src="../img/logo.png"
+          /></a>
+        </div>
+        <div class="col-4 text-right barra">
+          <ul class="navbar-nav mr-auto"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="barra-lateral col-12 col-sm-auto">
+          <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+            <a href="proveedor.html"><span>Registro de Proveedor</span></a>
+            <a href="Cliente.html"><span>Registro de Cliente</span></a>
+            <a href="vehiculo.html"><span>Registro de vehiculo</span></a>
+            <a href="Productoadmi.html"><span>Registro de Productos</span></a>
+            <a href="crear_servicio2.html"><span>Crear Servicio Domiciliario</span></a>
+            <a href="compra.html"><span>Registrar Compra</span></a>
+            <a href="../../Modelo/php/cotizar/tabla.php"><span>Visualizar Cotizaciones</span></a>
+            <a href="../../Modelo/php/Pedido/pedido.php"><span>Visualizar Pedidos</span></a>
+          </nav>
+        </div>
+        <main class="main col">
+          <div
+            class="row justify-content-center align-content-center text-center"
+          >
+            <div class="columna col-lg-6"></div>
+            <div class="contenedor">
+              <article>
+                <div class="card" id="tarjeta">
+                  <br /><br />
+                  <h2 class="h2">Registrar Producto</h2>
+                  <form
+                    action="../../Modelo/php/Productos/insertarpro.php"
+                    class="formulario1"
+                    method="post"
+                    onsubmit="return validar();"
+                  >
+                    <label for="inputZip" class="form-label"></label>
+                    <select
+                      id="Producto"
+                      name="Tipo_producto"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected disabled hidden value="">
+                        Tipo de producto
+                      </option>
+                      <option value="Desengrasante">Desengrasante</option>
+                      <option value="Desengrasante">Desengrasante</option>
+                      <option value="Anti pulgas">Anti pulgas</option>
+                      <option value="Acondicionador">Acondicionador</option>
+                    </select>
+
+                    <label for="inputZip" class="form-label"></label>
+                    <select
+                      id="Categoria"
+                      name="Categoria"
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected disabled hidden value="">
+                        Categoría
+                      </option>
+                      <option value="Animales">Animales</option>
+                      <option value="Hogar">Hogar</option>
+                      <option value="Autos">Autos</option>
+                    </select>
+
+                    <div class="mb-3" id="product_name">
+                      <label
+                        for="exampleInputEmail1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        id="Nombre"
+                        name="Nombre"
+                        type="text"
+                        class="form-control"
+                        placeholder="Nombre del Producto"
+                      />
+                    </div>
+
+                    <label for="inputZip" class="form-label"></label>
+                    <div class="input-group" id="price">
+                      <input
+                        id="Precio"
+                        name="Valor"
+                        type="number"
+                        class="form-control"
+                        aria-label="Dollar amount (with dot and two decimal places)"
+                        placeholder="Precio de Venta"
+                      />
+                      <span class="input-group-text">$</span>
+                      <span class="input-group-text">0.00</span>
+                    </div>
+
+                    <div class="mb-3" id="description">
+                      <label
+                        for="exampleInputEmail1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        id="Descripcion"
+                        name="Descripción"
+                        type="text"
+                        class="form-control"
+                        maxlength="500"
+                        placeholder="Descripción del Producto"
+                      />
+                    </div>
+
+                    <div class="mb-2" id="codigo">
+                      <label
+                        for="exampleInputEmail1"
+                        class="form-label"
+                      ></label>
+                      <input
+                        id="Codigo"
+                        name="codigo_pedido"
+                        type="number"
+                        class="form-control"
+                        placeholder="Codigo"
+                      />
+                    </div>
+                    <br /><br />
+
+                    <div class="botom3">
+                      <a href="../../Modelo/php/Productos/reportes/index.php"
+                        ><button type="button" class="btn btn-danger">
+                          Reporte PDF
+                        </button></a
+                      >
+                      <input
+                        type="submit"
+                        name="Registrar"
+                        class="btn btn-danger"
+                        value="Registrar"
+                        id="kk"
+                      />
+                      <a href="../../Modelo/php/Productos/product.php"
+                        ><button type="button" class="btn btn-secondary">
+                          Visualizar datos
+                        </button></a
+                      >
+                    </div>
+                    <br /><br />
+                  </form>
+                </div>
+              </article>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.js"></script>
+    <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Controlador/js/Producto.js"></script>
+  </body>
+</html>

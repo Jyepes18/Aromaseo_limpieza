@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Hacerpedido.css">
+    <title>Hacer pedido</title>
+</head>
+
+<body>
+
+    <form action="../../Modelo/php/Pedido/insetar.php" method="post" class="form" onsubmit="return validar();">
+        <h2 class="form_title">Hacer pedido</h2>
+
+        <a class="form_link" href="../../Modelo/php/Roles/index.php">volver</a>
+
+        <div class="form_container">
+
+            <div class="form_group" >
+                <input  id="Nombre" name="Nombre_Cliente" type="text"class="form_input" >
+                <label for="Nombre" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group" >
+                <input  id="Documento" name="Doc_Cliente" type="text" class="form_input">
+                <label for="Documento" class="form_label">Documento</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group" id="Producto1">
+                <input  id="Producto" name="Producto" type="text" class="form_input" >
+                <label for="Producto" class="form_label">Producto</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group" >
+                <input id="Cantidad" name="Cantidad" type="text"  class="form_input" >
+                <label for="Cantidad" class="form_label">Cantidad</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group" >
+                <input id="Telefono" name="Tel_Cliente" type="text"  class="form_input" >
+                <label for="Telefono" class="form_label">Telefono</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group" >
+                <input id="Direccion" name="Dir_Cliente" type="text"  class="form_input">
+                <label for="Direccion" class="form_label">Direccion</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group" >
+                <input id="codigo" name="Cod_Domicilio" type="number"  class="form_input">
+                <label for="codigo" class="form_label">Codigo</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div>
+            <input type="submit" name="registrar" class="form_submit" value="Hacer pedido">
+            </div>
+        </div>
+        
+    </form>
+    <script src="../../Controlador/js/hacer_pedido.js"></script>
+</body>
+</html>
+
+
+           
+
+    

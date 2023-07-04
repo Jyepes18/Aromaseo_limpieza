@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Servicio Domiciliario</title>
+    <link rel="stylesheet" href="../bootstrap css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/domicilio.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-8 barra">
+                <a href="../../Modelo/php/Roles/login.php"><img title="ㅤ" class="logo" src="../img/logo.png"></a>
+            </div>
+            <div class="col-4 text-right barra">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="barra-lateral col-12 col-sm-auto">
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="proveedor.html"><span>Registo de Proveedor</span></a>
+                    <a href="Cliente.html"><span>Registro de Cliente</span></a>
+                    <a href="vehiculo.html"><span>Registro de vehiculo</span></a>
+                    <a href="Productoadmi.html"><span>Registro de Productos</span></a>
+                    <a href="crear_servicio2.html"><span>Crear Servicio Domiciliario</span></a>
+                    <a href="compra.html"><span>Registrar Compra</span></a>
+                    <a href="../../Modelo/php/cotizar/tabla.php"><span>Visualizar Cotizaciones</span></a>
+                    <a href="../../Modelo/php/Pedido/pedido.php"><span>Visualizar Pedidos</span></a>
+                </nav>
+            </div>
+            <main class="main col">
+                <div class="row justify-content-center align-content-center text-center">
+                    <div class="columna col-lg-6">
+
+                    </div>
+                    <article>
+                        <div class="card" id="tarjeta" >
+
+                            <h1>Crear Servicio Domiciliario</h1>
+                            <form action="../../Modelo/php/Domicilio/inserdom.php" class="formulario1"  method="post" onsubmit="return validar();">
+
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input id="nombre" name="Nombre_Cliente" type="text" class="form-control" placeholder="Nombre del Cliente">
+
+                                <div class="mb-3" id="doc">
+                                    <label for="exampleInputEmail1" class="form-label"></label>
+                                    <input id="Documento" name="Doc_Cliente" type="number" class="form-control" placeholder="Documento del Cliente">
+                                </div>
+                                
+
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input id="Producto" name="Producto" type="text" class="form-control" placeholder="Producto">
+
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input id="Cantidad" name="Cantidad" type="number" class="form-control" placeholder="cantidad">
+
+                                
+                                <div class="mb-3" id="Tel">
+                                    <label for="exampleInputEmail1" class="form-label"></label>
+                                    <input id="Telefono" name="Tel_Cliente" type="number" class="form-control" placeholder="Telefono">
+                                </div>
+
+                                <label for="exampleInputEmail1" class="form-label"></label>
+                                <input id="Direccion" name="Dir_Cliente" type="text" class="form-control" placeholder="Direccion del cliente">
+
+                              
+
+<br><br><br>
+                                <div class="botom3">
+                                    <a href="../../Modelo/php/Domicilio/reportes/index.php"><button type="button" class="btn btn-danger">Reporte PDF</button></a>
+                                    <input type="submit" class="btn btn-primary" name="enviar"  value="Crear" id="boton">
+                                    <a href="../../Modelo/php/Domicilio/domicilio.php"><button type="button"   class="btn btn-secondary">Visualizar datos</button></a>
+                                  </div>
+                                  <br><br><br>
+                            </form>
+
+                        </div>
+                    </article>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <script src="../../Controlador/js/crearserv2.js"></script>
+    <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.js"></script>
+    <script src="../../Controlador/bootstrap js/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

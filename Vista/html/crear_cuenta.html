@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/crear_cuenta.css">
+    <title>Crear cuenta</title>
+</head>
+
+<body>
+    <form action="../../Modelo/php/crear cuenta/Crear_cuenta.php" method="post" class="form" onsubmit="return validar();">
+        <h2 class="form_title">Crear cuenta</h2>
+        <a class="form_link" href="../../Modelo/php/Roles/index.php">Volver</a>
+
+        
+
+        <div class="form_container">
+
+
+            <div class="form_group" >
+                <input type="text" id="Documento" name="documento" class="form_input">
+                <label for="Documento" class="form_label">Documento</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <label for="Tipo de documento"  class="form_label"></label>
+                <select  class="form_input" name="tipo_doc" title="ㅤ" id="tipoid">
+                    <option selected disabled hidden value="">Tipo de documento</option>
+                    <option value="C.E">C.E</option>
+                    <option value="C.C">C.C</option>
+                    <span class="form_line"></span>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="Nombres" name="nombre" class="form_input" placeholder="" required>
+                <label for="Nombres" class="form_label">Nombres</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="Apellidos" name="apellido" class="form_input" placeholder="" required>
+                <label for="Apellidos" class="form_label">Apellidos</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="Telefono" name="telefono" class="form_input" placeholder="" required>
+                <label for="Telefono" class="form_label">Teléfono</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="Usuario" name="correo" class="form_input" placeholder="" required>
+                <label for="Usuario" class="form_label">Usuario</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="password" id="Contraseña" name="contraseña" class="form_input" placeholder="" required>
+                <label for="Contraseña" class="form_label">Contraseña</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <label for="codigorol"  class="form_label"></label>
+                <select id="codigo_rol"  name="codigo_rol" title="ㅤ" class="form_input"  >
+                    <option selected disabled hidden value="">Rol</option>
+                    <option value="2">cliente</option>
+                    <span class="form_line"></span>
+                </select>
+            </div>
+
+
+         <div class="botom3">
+            <input type="submit" class="form_submit" name="Registrarse" value="Registrarse">
+        </div>
+    </form>
+
+    <script src="../../Controlador/js/crear_cuenta.js"></script>
+</body>
+
+</html>
